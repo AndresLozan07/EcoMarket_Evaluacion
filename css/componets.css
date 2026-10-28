@@ -1,0 +1,563 @@
+/* COMIENZO INDEX.HTML */
+
+/* TODA LA PÁGINA */
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(52, 65, 57);
+}
+
+/* ENCABEZADO */
+.titulo span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 750;
+    color: rgb(33, 136, 79);
+}
+
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 750;
+    color: rgb(0, 0, 0);
+}
+
+.e_inicio,
+.e_catalogo,
+.e_nosotros,
+.e_contacto {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* ICONOS DEL ENCABEZADO */
+.barra_lupa,
+.barra_carro {
+    width: 22px;
+    height: 22px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+/* BANNER PRINCIPAL */
+.titulo_banner {
+    font-size: 34px;
+    font-weight: 700;
+    color: rgb(1, 63, 27);
+}
+
+.texto_banner {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.boton_productos {
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 136, 79);
+}
+
+/* BANNER SECUNDARIO */
+.item_banner h3 {
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(67, 106, 82);
+}
+
+/* PRODUCTOS DESTACADOS */
+.destacados_objetos p {
+    font-size: 13px;
+    font-weight: 400;
+    color: rgb(52, 65, 57);
+}
+
+.destacados_objetos span {
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(52, 65, 57);
+}
+
+/* PIE DE PÁGINA */
+footer h3 {
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+footer h4 {
+    font-size: 17px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+footer p,
+.pie_de_pagina footer ol li {
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+/* REDES SOCIALES: ICONO Y TEXTO EN LA MISMA LÍNEA */
+.pie_de_pagina .logos_redes > div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+/* TAMAÑO IGUAL PARA LOS DOS ICONOS */
+.pie_de_pagina .logos_redes img {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin: 0;
+}
+
+.pie_de_pagina footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* FINAL INDEX.HTML */
+
+/* COMIENZO CATALOGO */
+
+/* TEXTO SOLO PARA LECTORES DE PANTALLA */
+.texto_oculto {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+}
+
+/* ENLACE ACTIVO DEL MENU */
+.barra_encabezado .activo {
+    color: rgb(33, 136, 79);
+    border-bottom: 2px solid rgb(33, 136, 79);
+    padding-bottom: 4px;
+}
+
+/* TITULO DE LA PAGINA */
+.titulo_pagina {
+    margin: 0;
+    font-size: 30px;
+    font-weight: 700;
+    color: rgb(34, 48, 40);
+}
+
+@media (min-width: 600px) {
+    .titulo_pagina {
+        font-size: 38px;
+    }
+}
+
+/* BUSCADOR */
+.buscador {
+    display: flex;
+    gap: 12px;
+    max-width: 700px;
+    margin-top: 20px;
+}
+
+.buscador input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    border: 1px solid rgb(185, 220, 199);
+    border-radius: 6px;
+}
+
+/* BOTON VERDE (SE REUTILIZA EN OTRAS PAGINAS) */
+.boton_verde {
+    padding: 12px 24px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 136, 79);
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* FILTROS */
+.filtros {
+    padding: 22px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.grupo_filtro {
+    margin-bottom: 24px;
+}
+
+.filtros h3 {
+    margin: 0 0 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(34, 48, 40);
+}
+
+.filtros label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.filtros input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    accent-color: rgb(33, 136, 79);
+}
+
+.filtros input[type="range"] {
+    width: 100%;
+    accent-color: rgb(33, 136, 79);
+}
+
+.rango_precios {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.filtros .boton_verde {
+    width: 100%;
+    padding: 14px;
+}
+
+/* TARJETAS DE PRODUCTO */
+.tarjeta_producto {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 14px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta_producto img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.producto_nombre {
+    margin: 8px 0 0;
+    font-size: 15px;
+    font-weight: 500;
+    color: rgb(34, 48, 40);
+}
+
+.producto_precio {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(33, 136, 79);
+}
+
+/* ESTADO DE DISPONIBILIDAD */
+.estado {
+    align-self: flex-start;
+    padding: 3px 10px;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 20px;
+}
+
+.en_stock {
+    color: rgb(33, 136, 79);
+    background-color: rgb(230, 244, 234);
+}
+
+.agotado {
+    color: rgb(85, 85, 85);
+    background-color: rgb(228, 228, 228);
+}
+
+/* BOTON DE FAVORITOS (CORAZON) */
+.boton_favorito {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    width: 36px;
+    height: 36px;
+    font-size: 18px;
+    line-height: 1;
+    color: rgb(34, 48, 40);
+    background-color: #ffffff;
+    border: 1px solid rgb(221, 221, 221);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* PAGINACION */
+.paginacion button {
+    width: 40px;
+    height: 40px;
+    font-family: inherit;
+    font-size: 15px;
+    color: rgb(34, 48, 40);
+    background-color: #ffffff;
+    border: 1px solid rgb(185, 220, 199);
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.paginacion .pagina_actual {
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 136, 79);
+    border-color: rgb(33, 136, 79);
+}
+
+/* FINAL CATALOGO */
+
+
+/* COMIENZO SOBRE NOSOTROS */
+
+/* TITULOS DE SECCION */
+.titulo_seccion {
+    margin: 0 0 25px;
+    font-size: 28px;
+    font-weight: 700;
+    color: rgb(34, 48, 40);
+}
+
+@media (min-width: 600px) {
+    .titulo_seccion {
+        font-size: 36px;
+    }
+}
+
+/* TEXTO DE LA HISTORIA */
+.historia_texto p {
+    margin: 0 0 15px;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.historia_imagen {
+    border-radius: 16px;
+    background-color: rgb(207, 229, 214);
+}
+
+/* TARJETAS BLANCAS */
+.tarjeta_mision,
+.tarjeta_valor,
+.tarjeta_testimonio {
+    padding: 22px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.tarjeta_mision {
+    margin-bottom: 20px;
+}
+
+.tarjeta_mision h3,
+.tarjeta_valor h3,
+.principio h3 {
+    margin: 0 0 6px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(34, 48, 40);
+}
+
+.tarjeta_mision p,
+.tarjeta_valor p,
+.principio p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+/* ICONOS DE PRINCIPIOS (CIRCULO VERDE) */
+.principio img {
+    flex-shrink: 0;
+    width: 76px;
+    height: 76px;
+    padding: 16px;
+    box-sizing: border-box;
+    object-fit: contain;
+    background-color: rgb(232, 247, 238);
+    border: 2px solid #2ecc71;
+    border-radius: 50%;
+}
+
+/* TESTIMONIOS */
+.estrellas {
+    margin: 0 0 12px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    color: rgb(33, 136, 79);
+}
+
+.estrella_vacia {
+    color: rgb(188, 208, 195);
+}
+
+.comentario {
+    margin: 0 0 14px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.cliente {
+    margin: 0;
+    font-size: 15px;
+    font-weight: 700;
+    color: rgb(34, 48, 40);
+}
+
+/* COMIENZO FOTOS DE TESTIMONIOS */
+
+/* FOTO AL LADO DEL NOMBRE */
+.datos_cliente {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.datos_cliente img {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border: 2px solid rgb(33, 136, 79);
+    border-radius: 50%;
+}
+
+
+/* FINAL SOBRE NOSOTROS */
+
+
+
+/* COMIENZO CONTACTO */
+
+/* FORMULARIO */
+.formulario_contacto {
+    padding: 22px;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    border: 1px solid rgb(185, 220, 199);
+    border-radius: 8px;
+}
+
+.formulario_contacto label {
+    display: block;
+    margin: 14px 0 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(34, 48, 40);
+}
+
+.formulario_contacto input,
+.formulario_contacto textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px 14px;
+    font-family: inherit;
+    font-size: 14px;
+    border: 1px solid rgb(185, 220, 199);
+    border-radius: 6px;
+}
+
+.formulario_contacto textarea {
+    resize: vertical;
+}
+
+/* VALIDACION: VERDE SI ESTA BIEN, ROJO SI FALTA ALGO AL ESCRIBIR */
+.formulario_contacto input:valid,
+.formulario_contacto textarea:valid {
+    border-color: rgb(33, 136, 79);
+}
+
+.formulario_contacto input:focus:invalid,
+.formulario_contacto textarea:focus:invalid {
+    border-color: rgb(200, 50, 50);
+}
+
+.formulario_contacto .boton_verde {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* TARJETA DE INFORMACION */
+.tarjeta_info {
+    padding: 22px;
+    box-sizing: border-box;
+    background-color: rgb(230, 244, 234);
+    border-radius: 8px;
+}
+
+.tarjeta_info ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.tarjeta_info li {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.imagen_ubicacion {
+    display: block;
+    width: 100%;
+    margin: 16px 0;
+    border-radius: 8px;
+}
+
+/* EL ENLACE USA LA CLASE boton_verde */
+.tarjeta_info .boton_verde {
+    display: inline-block;
+    text-decoration: none;
+}
+
+/* CIRCULOS DE REDES */
+.redes_contacto {
+    display: flex;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.circulo_red {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    font-size: 14px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 136, 79);
+    border-radius: 50%;
+    text-decoration: none;
+}
+
+/* FINAL CONTACTO */

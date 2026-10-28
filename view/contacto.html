@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/componets.css">
+    <title>Contacto</title>
+</head>
+<body>
+
+    <!--barra de encabezado-->
+<header>
+ <li class="barra_encabezado"> 
+    <h1 class="titulo"><span>Eco</span>Market</h1>
+
+    <a href="../index.html" class="e_inicio">
+        Inicio
+    </a>
+    
+    <a href="productos.html" class="e_catalogo">
+        Catálogo
+    </a>
+
+    <a href="sobre-nosotros.html" class="e_nosotros">
+        Sobre Nosotros
+    </a>
+
+    <a href="contacto.html" class="e_contacto activo">
+        Contacto
+    </a>
+
+    <img src="../img/icons/lupa.png" class="barra_lupa" alt="Buscar">
+    <img src="../img/icons/carrito.png" class="barra_carro" alt="Carrito"> 
+ </li>
+</header>
+
+<main>
+
+    <!--titulo de la pagina-->
+    <section class="franja_titulo">
+        <div class="contenedor_pagina">
+            <h2 class="titulo_pagina">Contacto</h2>
+            <p>Escríbenos, con gusto te ayudamos.</p>
+        </div>
+    </section>
+
+    <section class="contacto_contenido contenedor_pagina">
+
+        <!--formulario-->
+        <form class="formulario_contacto">
+            <h3>Envíanos un mensaje</h3>
+
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="correo">Correo electrónico</label>
+            <input type="email" id="correo" name="correo" required>
+
+            <l  abel for="asunto">Asunto</label>
+            <input type="text" id="asunto" name="asunto" required>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit" class="boton_verde">Enviar mensaje</button>
+        </form>
+
+        <!--informacion y ubicacion-->
+        <aside class="tarjeta_info">
+            <h3>Información de contacto</h3>
+            <ul>
+                <li>Correo: ecomarket@gmail.com</li>
+                <li>Teléfono: 3245678900</li>
+                <li>Dirección: Tv 93 #34-99, Bucaramanga, Santander</li>
+                <li>Horario: Lunes a viernes, 8:00 a.m. a 6:00 p.m.</li>
+            </ul>
+
+            <img src="../img/hero/mapa.png" class="imagen_ubicacion" alt="Mapa de ubicación de EcoMarket">
+
+            <a href="https://www.google.com/maps/search/?api=1&query=Tv+93+%2334-99+Bucaramanga+Santander" target="_blank" rel="noopener" class="boton_verde">
+                Ver en Google Maps
+            </a>
+        </aside>
+
+    </section>
+
+</main>
+
+    <!--pie de pagina-->
+    <li class="pie_de_pagina">
+    <footer>
+
+        <!-- Columna 1: Marca -->
+        <div class="columna_pie">
+            <h3 class="titulo_pie">EcoMarket</h3>
+            <p>Productos ecológicos para un consumo responsable</p>
+        </div>
+
+        <!-- Columna 2: Contacto -->
+        <div class="columna_pie">
+            <h4>Contacto</h4>
+            <ol>
+                <li>ecomarket@gmail.com</li>
+                <li>3245678900</li>
+                <li>Tv 93 #34-99, Bucaramanga, Santander</li>
+            </ol>
+        </div>
+
+        <!-- Columna 3: Legal -->
+        <div class="columna_pie">
+            <h4>Legal</h4>
+            <ol>
+                <li><a href="sobre-nosotros.html">Términos y condiciones</a></li>
+                <li><a href="sobre-nosotros.html">Política de privacidad</a></li>
+                <li><a href="sobre-nosotros.html">Política de cookies</a></li>
+            </ol>
+        </div>
+
+        <!-- Columna 4: Redes sociales -->
+        <div class="columna_pie">
+            <h4>Síguenos en redes sociales</h4>
+
+            <div class="logos_redes">
+                <div>
+                    <img src="../img/icons/fb.png" alt="Facebook">
+                    <span>EcoMarket en Facebook</span>
+                </div>
+
+                <div>
+                    <img src="../img/icons/ig.png" alt="Instagram">
+                    <span>@ecomarket.eco</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</li>
+
+</body>
+</html>

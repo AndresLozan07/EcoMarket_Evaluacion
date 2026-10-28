@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/componets.css">
+    <title>Catálogo</title>
+</head>
+<body>
+
+    <!--barra de encabezado-->
+<header>
+ <li class="barra_encabezado"> 
+    <h1 class="titulo"><span>Eco</span>Market</h1>
+
+    <a href="../index.html" class="e_inicio">
+        Inicio
+    </a>
+    
+    <a href="productos.html" class="e_catalogo activo">
+        Catálogo
+    </a>
+
+    <a href="sobre-nosotros.html" class="e_nosotros">
+        Sobre Nosotros
+    </a>
+
+    <a href="contacto.html" class="e_contacto">
+        Contacto
+    </a>
+
+    <img src="../img/icons/lupa.png" class="barra_lupa" alt="Buscar">
+    <img src="../img/icons/carrito.png" class="barra_carro" alt="Carrito"> 
+ </li>
+</header>
+
+<main>
+
+    <!--titulo y buscador-->
+    <section class="franja_titulo">
+        <div class="contenedor_pagina">
+            <h2 class="titulo_pagina">Catálogo de productos</h2>
+
+            <div class="buscador" role="search">
+                <label for="buscar_producto" class="texto_oculto">Buscar productos</label>
+                <input type="search" id="buscar_producto" placeholder="Buscar productos">
+                <button type="button" class="boton_verde">Buscar</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="catalogo_contenido contenedor_pagina">
+
+        <!--filtros-->
+        <aside class="filtros">
+
+            <div class="grupo_filtro">
+                <h3>Categorías</h3>
+                <label><input type="checkbox"> Hogar (5)</label>
+                <label><input type="checkbox"> Moda (5)</label>
+                <label><input type="checkbox"> Cuidado Personal (5)</label>
+                <label><input type="checkbox"> Alimentos (5)</label>
+            </div>
+
+            <div class="grupo_filtro">
+                <h3>Precio</h3>
+                <input type="range" min="5000" max="80000" value="40000" aria-label="Precio máximo">
+                <div class="rango_precios">
+                    <span>$ 5.000</span>
+                    <span>$ 80.000</span>
+                </div>
+            </div>
+
+            <div class="grupo_filtro">
+                <h3>Disponibilidad</h3>
+                <label><input type="checkbox"> En stock</label>
+                <label><input type="checkbox"> Agotado</label>
+            </div>
+
+            <button type="button" class="boton_verde">Aplicar filtros</button>
+        </aside>
+
+        <div class="catalogo_derecha">
+
+            <!--productos-->
+            <div class="catalogo_grid">
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Aceite orgánico a favoritos">♡</button>
+                    <img src="../img/products/alimentos-aceite.png" alt="Aceite orgánico">
+                    <h3 class="producto_nombre">Aceite orgánico</h3>
+                    <p class="producto_precio">$ 10.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Café orgánico a favoritos">♡</button>
+                    <img src="../img/products/alimentos-cafe.jpg" alt="Café orgánico">
+                    <h3 class="producto_nombre">Café orgánico</h3>
+                    <p class="producto_precio">$ 23.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Barra de chocolate a favoritos">♡</button>
+                    <img src="../img/products/alimentos-chocolate.png" alt="Barra de chocolate">
+                    <h3 class="producto_nombre">Barra de chocolate</h3>
+                    <p class="producto_precio">$ 36.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Snack de remolacha a favoritos">♡</button>
+                    <img src="../img/products/alimentos-remolacha.png" alt="Snack de remolacha">
+                    <h3 class="producto_nombre">Snack de remolacha</h3>
+                    <p class="producto_precio">$ 49.900</p>
+                    <span class="estado agotado">Agotado</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Té natural a favoritos">♡</button>
+                    <img src="../img/products/alimentos-tea.jpg" alt="Té natural">
+                    <h3 class="producto_nombre">Té natural</h3>
+                    <p class="producto_precio">$ 62.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Bolsa reutilizable a favoritos">♡</button>
+                    <img src="../img/products/hogar-bolsa.jpg" alt="Bolsa reutilizable">
+                    <h3 class="producto_nombre">Bolsa reutilizable</h3>
+                    <p class="producto_precio">$ 75.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Cepillo de limpieza a favoritos">♡</button>
+                    <img src="../img/products/hogar-cepillo.png" alt="Cepillo de limpieza">
+                    <h3 class="producto_nombre">Cepillo de limpieza</h3>
+                    <p class="producto_precio">$ 18.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Detergente ecológico a favoritos">♡</button>
+                    <img src="../img/products/hogar-detergente.jpg" alt="Detergente ecológico">
+                    <h3 class="producto_nombre">Detergente ecológico</h3>
+                    <p class="producto_precio">$ 31.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Lavaplatos biodegradable a favoritos">♡</button>
+                    <img src="../img/products/hogar-lavaplatos.jpg" alt="Lavaplatos biodegradable">
+                    <h3 class="producto_nombre">Lavaplatos biodegradable</h3>
+                    <p class="producto_precio">$ 44.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Piedra de limpieza a favoritos">♡</button>
+                    <img src="../img/products/hogar-piedra.jpg" alt="Piedra de limpieza">
+                    <h3 class="producto_nombre">Piedra de limpieza</h3>
+                    <p class="producto_precio">$ 57.900</p>
+                    <span class="estado agotado">Agotado</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Bolsa de tela a favoritos">♡</button>
+                    <img src="../img/products/moda-bolsa.png" alt="Bolsa de tela">
+                    <h3 class="producto_nombre">Bolsa de tela</h3>
+                    <p class="producto_precio">$ 70.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Camiseta a favoritos">♡</button>
+                    <img src="../img/products/moda-camiseta.jpg" alt="Camiseta">
+                    <h3 class="producto_nombre">Camiseta</h3>
+                    <p class="producto_precio">$ 13.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Cartera a favoritos">♡</button>
+                    <img src="../img/products/moda-cartera.png" alt="Cartera">
+                    <h3 class="producto_nombre">Cartera</h3>
+                    <p class="producto_precio">$ 26.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Pantalón a favoritos">♡</button>
+                    <img src="../img/products/moda-pantalon.png" alt="Pantalón">
+                    <h3 class="producto_nombre">Pantalón</h3>
+                    <p class="producto_precio">$ 39.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Zapatos a favoritos">♡</button>
+                    <img src="../img/products/moda-zapato.jpg" alt="Zapatos">
+                    <h3 class="producto_nombre">Zapatos</h3>
+                    <p class="producto_precio">$ 52.900</p>
+                    <span class="estado agotado">Agotado</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Acondicionador sólido a favoritos">♡</button>
+                    <img src="../img/products/personal-acondicionador.jpg" alt="Acondicionador sólido">
+                    <h3 class="producto_nombre">Acondicionador sólido</h3>
+                    <p class="producto_precio">$ 65.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Cepillo de bambú a favoritos">♡</button>
+                    <img src="../img/products/personal-cepillo.jpg" alt="Cepillo de bambú">
+                    <h3 class="producto_nombre">Cepillo de bambú</h3>
+                    <p class="producto_precio">$ 78.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Tabletas dentales a favoritos">♡</button>
+                    <img src="../img/products/personal-dentales.jpg" alt="Tabletas dentales">
+                    <h3 class="producto_nombre">Tabletas dentales</h3>
+                    <p class="producto_precio">$ 21.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Esponja natural a favoritos">♡</button>
+                    <img src="../img/products/personal-esponja.jpg" alt="Esponja natural">
+                    <h3 class="producto_nombre">Esponja natural</h3>
+                    <p class="producto_precio">$ 34.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+                <article class="tarjeta_producto">
+                    <button type="button" class="boton_favorito" aria-label="Agregar Shampoo sólido a favoritos">♡</button>
+                    <img src="../img/products/personal-shampoo.jpg" alt="Shampoo sólido">
+                    <h3 class="producto_nombre">Shampoo sólido</h3>
+                    <p class="producto_precio">$ 47.900</p>
+                    <span class="estado en_stock">En stock</span>
+                </article>
+
+            </div>
+
+            <!--paginacion-->
+            <nav class="paginacion" aria-label="Paginación del catálogo">
+                <button type="button" aria-label="Página anterior">‹</button>
+                <button type="button" class="pagina_actual" aria-current="page">1</button>
+                <button type="button">2</button>
+                <button type="button">3</button>
+                <button type="button">...</button>
+                <button type="button" aria-label="Página siguiente">›</button>
+            </nav>
+
+        </div>
+    </section>
+
+</main>
+
+    <!--pie de pagina-->
+<li class="pie_de_pagina">
+    <footer>
+
+        <!-- Columna 1: Marca -->
+        <div class="columna_pie">
+            <h3 class="titulo_pie">EcoMarket</h3>
+            <p>Productos ecológicos para un consumo responsable</p>
+        </div>
+
+        <!-- Columna 2: Contacto -->
+        <div class="columna_pie">
+            <h4>Contacto</h4>
+            <ol>
+                <li>ecomarket@gmail.com</li>
+                <li>3245678900</li>
+                <li>Tv 93 #34-99, Bucaramanga, Santander</li>
+            </ol>
+        </div>
+
+        <!-- Columna 3: Legal -->
+        <div class="columna_pie">
+            <h4>Legal</h4>
+            <ol>
+                <li><a href="sobre-nosotros.html">Términos y condiciones</a></li>
+                <li><a href="sobre-nosotros.html">Política de privacidad</a></li>
+                <li><a href="sobre-nosotros.html">Política de cookies</a></li>
+            </ol>
+        </div>
+
+        <!-- Columna 4: Redes sociales -->
+        <div class="columna_pie">
+            <h4>Síguenos en redes sociales</h4>
+
+            <div class="logos_redes">
+                <div>
+                    <img src="../img/icons/fb.png" alt="Facebook">
+                    <span>EcoMarket en Facebook</span>
+                </div>
+
+                <div>
+                    <img src="../img/icons/ig.png" alt="Instagram">
+                    <span>@ecomarket.eco</span>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+</li>
+
+</body>
+</html>

@@ -1,0 +1,90 @@
+/*COMIENZO INDEX.HTML*/
+
+/*TODA LA PAGINA*/
+body {
+    font-family: 'Poppins', sans-serif;
+    color: rgb(52, 65, 57);
+}
+
+/* Encabezado */
+.titulo span{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 750;
+    color: rgb(33, 136, 79);
+}
+
+.titulo {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px;
+    font-weight: 750;
+    color: rgb(0, 0, 0);
+}
+
+.e_inicio, .e_catalogo, .e_nosotros, .e_contacto {
+    font-size: 10px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+/* Banner principal */
+.titulo_banner {
+    font-size: 34px;
+    font-weight: 700;
+    color: rgb(1, 63, 27);
+}
+
+.texto_banner {
+    font-size: 12px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+.boton_productos {
+    font-size: 11px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    background-color: rgb(33, 136, 79);
+}
+
+/* Banner secundario */
+.item_banner h3 {
+    font-size: 11px;
+    font-weight: 500;
+    color: rgb(67, 106, 82);
+}
+
+/* Productos destacados */
+.destacados_objetos p {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(52, 65, 57);
+}
+
+.destacados_objetos span {
+    font-size: 13px;
+    font-weight: 700;
+    color: rgb(52, 65, 57);
+}
+
+/* Pie de página */
+footer h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+footer h4 {
+    font-size: 11px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+
+footer p {
+    font-size: 10px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+}
+
+/*FINAL INDEX.HTML*/
